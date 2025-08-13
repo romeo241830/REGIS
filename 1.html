@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Test & Result Portal</title>
+  <link rel="stylesheet" href="1.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Student Portal</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Login ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Student Login</a></li>
+            <li><a href="#">Admin Login</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Registration</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Result</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="container">
+    <h2>Course Registration & Test</h2>
+    <form class="form-card">
+      <div class="form-group">
+        <label>Course Code</label>
+        <input type="text" name="courseCode" required>
+      </div>
+      <div class="form-group">
+        <label>Course Name</label>
+        <input type="text" name="courseName" required>
+      </div>
+      <div class="form-group">
+        <label>Section</label>
+        <input type="text" name="section" required>
+      </div>
+      <div class="form-group">
+        <label>Roll Number</label>
+        <input type="text" name="rollNumber" required>
+      </div>
+      <div class="form-group">
+        <label>Year</label>
+        <input type="text" name="year" required>
+      </div>
+      <div class="form-group">
+        <label>Semester</label>
+        <input type="text" name="sem" required>
+      </div>
+      <div class="form-group">
+        <label>Registration</label>
+        <input type="text" name="registration" required>
+      </div>
+
+      <h3>Answer All Questions</h3>
+
+      <div class="question">
+        <p>1. Question Text</p>
+        <label><input type="radio" name="q1"> Option 1</label>
+        <label><input type="radio" name="q1"> Option 2</label>
+        <label><input type="radio" name="q1"> Option 3</label>
+        <label><input type="radio" name="q1"> Option 4</label>
+      </div>
+
+      <div class="question">
+        <p>2. Question Text</p>
+        <label><input type="radio" name="q2"> Option 1</label>
+        <label><input type="radio" name="q2"> Option 2</label>
+        <label><input type="radio" name="q2"> Option 3</label>
+        <label><input type="radio" name="q2"> Option 4</label>
+      </div>
+
+      <div class="form-buttons">
+        <button type="submit" class="btn primary">Submit</button>
+        <button type="reset" class="btn secondary">Reset</button>
+      </div>
+    </form>
+  </section>
+  <section class="container">
+    <h2>Results</h2>
+    <form class="form-card">
+      <div class="form-group">
+        <label>Roll Number</label>
+        <input type="text" name="rollNo" required>
+      </div>
+      <div class="form-buttons">
+        <button type="submit" class="btn primary">Submit</button>
+        <button type="reset" class="btn secondary">Reset</button>
+      </div>
+    </form>
+
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Course Code</th>
+          <th>Course Name</th>
+          <th>Grade Point</th>
+          <th>Credit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>CSE101</td>
+          <td>Data Structures</td>
+          <td>9</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>CSE102</td>
+          <td>DBMS</td>
+          <td>8</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="result-summary">
+      <p>SLPH: <span>--</span></p>
+      <p>CLPH: <span>--</span></p>
+    </div>
+  </section>
+
+</body>
+</html>
